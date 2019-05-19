@@ -133,7 +133,7 @@ class BaseHandler:
                 if i < SENDMAIL_RETRY_CNT and sgenable and sgapikey:
                     self.sendgrid_sendmail(sgapikey, SRC_EMAIL, to, "KindleEar %s" % lctime, "Deliver from KindleEar", attachments=[(filename, attachment),])
                 else:
-                    mail.send_mail(SRC_EMAIL, to, "KindleEar %s" % lctime, "Deliver from KindleEar", attachments=[(filename, attachment),])
+                    mail.send_mail(SRC_EMAIL, to, "你的好友@小檬茶茶 已上线 %s" % lctime, "今天也要冲鸭！", attachments=[(filename, attachment),])
             except OverQuotaError as e:
                 if i < SENDMAIL_RETRY_CNT:
                     default_log.warn('overquota when sendmail to %s:%s, retry!' % (to, str(e)))
