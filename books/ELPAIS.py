@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-from bs4 import BeautifulSoup
-from base import BaseFeedBook, URLOpener, string_of_tag
+from base import BaseFeedBook
 
 def getBook():
     return Elpais
 
 class Elpais(BaseFeedBook):
     title                 = u'El País'
+    __author__            = u'El País'
     description           = u'西班牙《国家报》Noticias de última hora sobre la actualidad en España y el mundo.'
     language              = 'es'
     feed_encoding         = "utf-8"
