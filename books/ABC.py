@@ -27,4 +27,5 @@ class ABC(BaseFeedBook):
             (u'Gente & Estilo', 'http://www.abc.es/rss/feeds/abc_Estilo.xml'),
             (u'Summum', 'https://www.abc.es/rss/feeds/abc_Summum.xml'),
             (u'Cultura & Ocio', 'http://www.abc.es/rss/feeds/abc_Cultura.xml'),
-            ]   
+            ] 
+            
